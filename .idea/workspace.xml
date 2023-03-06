@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fc862ae-77df-4be7-a99e-2ed41fd6a292" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/promotion_engine/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/promotion_engine/model/ProductItem.java" afterDir="false" />
+    <list default="true" id="0fc862ae-77df-4be7-a99e-2ed41fd6a292" name="Changes" comment="Comparision bug fixed">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/promotion_engine/test/PromotionEngineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/promotion_engine/repository/PromoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/promotion_engine/repository/PromoRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,6 +46,50 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.promotion_engine.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PromotionEngineTest.testNoPromotion">
+    <configuration name="PromotionEngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PromotionEngineAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.promotion_engine.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.promotion_engine.test" />
+      <option name="MAIN_CLASS_NAME" value="com.promotion_engine.test.PromotionEngineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PromotionEngineTest.testNoPromotion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PromotionEngineAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.promotion_engine.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.promotion_engine.test" />
+      <option name="MAIN_CLASS_NAME" value="com.promotion_engine.test.PromotionEngineTest" />
+      <option name="METHOD_NAME" value="testNoPromotion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PromotionEngineTest.testNoPromotion" />
+        <item itemvalue="JUnit.PromotionEngineTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,8 +98,107 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678092481169</updated>
-      <workItem from="1678092482469" duration="378000" />
+      <workItem from="1678092482469" duration="9186000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1678092928344</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678092928344</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cart class created">
+      <created>1678093537168</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678093537168</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Constructors, Setters and Getters added">
+      <created>1678094839459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678094839459</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Promo model added">
+      <created>1678095409103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678095409103</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Promo Repository added">
+      <created>1678095873498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678095873498</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Price Calculation Interface created">
+      <created>1678096406719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678096406719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Price Calculation Service with missing logics">
+      <created>1678097154442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678097154442</updated>
+    </task>
+    <task id="LOCAL-00008" summary="calculatePrice logic implemented">
+      <created>1678098117049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678098117049</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Discounted price calculation method added">
+      <created>1678098218995</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678098218995</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Promotion Services Added">
+      <created>1678099758340</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099758340</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Promotion logic implemented">
+      <created>1678099796134</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099796134</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Promotion classes addes">
+      <created>1678101537117</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678101537117</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finding related product item method added">
+      <created>1678101653680</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678101653680</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Comparision bug fixed">
+      <created>1678102229653</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678102229653</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +214,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Cart class created" />
+    <MESSAGE value="Constructors, Setters and Getters added" />
+    <MESSAGE value="Promo model added" />
+    <MESSAGE value="Promo Repository added" />
+    <MESSAGE value="Price Calculation Interface created" />
+    <MESSAGE value="Price Calculation Service with missing logics" />
+    <MESSAGE value="calculatePrice logic implemented" />
+    <MESSAGE value="Discounted price calculation method added" />
+    <MESSAGE value="Promotion Services Added" />
+    <MESSAGE value="Promotion logic implemented" />
+    <MESSAGE value="Promotion classes addes" />
+    <MESSAGE value="Finding related product item in the cart added" />
+    <MESSAGE value="Finding related product item method added" />
+    <MESSAGE value="Comparision bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comparision bug fixed" />
   </component>
 </project>
