@@ -25,9 +25,9 @@ public class BundledPromoService implements IPromoService{
         }
         // remove the items which are part of multi product promotion combination (Apply only one promotion at a time!!!)
         for (ProductItem productItem : promo.getPromotionProductItemList()) {
-            ProductItem cartProductItemItem = cart.findProductItem(productItem);
-            if(cartProductItemItem != null) {
-                cartProductItemItem.setAmount(cartProductItemItem.getAmount() - numberOfPromos * productItem.getAmount());
+            ProductItem cartProductItem = cart.findProductItem(productItem);
+            if(cartProductItem != null) {
+                cartProductItem.setAmount(cartProductItem.getAmount() - numberOfPromos * productItem.getAmount());
             }
         }
         return numberOfPromos * promo.getPromoPrice();
