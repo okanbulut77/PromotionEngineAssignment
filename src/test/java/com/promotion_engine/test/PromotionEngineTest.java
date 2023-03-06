@@ -35,4 +35,16 @@ class PromotionEngineTest {
         double actualValue = this.priceService.calculatePrice(cart);
         assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    void testSingleProductPromotion() {
+        Cart cart = new Cart(Arrays.asList(new ProductItem(new Product("A", 50, 0), 5),
+                new ProductItem(new Product("B", 30, 0), 5),
+                new ProductItem(new Product("C", 20, 0), 1)
+        ));
+
+        double expectedValue = 370;
+        double actualValue = this.priceService.calculatePrice(cart);
+        assertEquals(expectedValue, actualValue);
+    }
 }
