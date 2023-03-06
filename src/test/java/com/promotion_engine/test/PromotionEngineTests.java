@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PromotionEngineTest {
+class PromotionEngineTests {
     IPriceCalculationService priceService;
     IPromoRepository promoRepository;
 
