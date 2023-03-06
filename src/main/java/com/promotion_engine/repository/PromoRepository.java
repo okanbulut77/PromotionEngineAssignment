@@ -14,7 +14,7 @@ public class PromoRepository implements IPromoRepository {
         // initialize Promotion List
 
         promoList.add(new Promo(Arrays.asList(new ProductItem(new Product("A", 50, 0), 3)), 130, false));
-        promoList.add(new Promo(Arrays.asList(new ProductItem(new Product("B", 50, 0), 2)), 45, false));
+        promoList.add(new Promo(Arrays.asList(new ProductItem(new Product("B", 30, 0), 2)), 45, false));
         promoList.add(new Promo(Arrays.asList(
                 new ProductItem(new Product("C", 20, 0), 1),
                 new ProductItem(new Product("D", 15, 0), 1)), 30, true));
