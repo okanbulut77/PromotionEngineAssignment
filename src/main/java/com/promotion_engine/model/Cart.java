@@ -16,4 +16,14 @@ public class Cart {
     public void setProductItems(List<ProductItem> productItems) {
         this.productItems = productItems;
     }
+
+    //Find matching product items
+    public ProductItem findProductItem(ProductItem productItem) {
+        for(ProductItem cartProductItem : this.productItems) {
+            if(productItem.getProduct().equals(cartProductItem.getProduct())) {
+                return cartProductItem;
+            }
+        }
+        return null;
+    }
 }
