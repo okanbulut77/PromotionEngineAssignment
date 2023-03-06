@@ -47,4 +47,29 @@ class PromotionEngineTest {
         double actualValue = this.priceService.calculatePrice(cart);
         assertEquals(expectedValue, actualValue);
     }
+    @Test
+    void testSingleBundleCombination() {
+        Cart cart = new Cart(Arrays.asList(new ProductItem(new Product("A", 50, 0), 3),
+                new ProductItem(new Product("B", 30, 0), 5),
+                new ProductItem(new Product("C", 20, 0), 1),
+                new ProductItem(new Product("D", 15, 0), 1)
+        ));
+
+        double expectedValue = 280;
+        double actualValue = this.priceService.calculatePrice(cart);
+        assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    void testMultiSingleMultiBundleCombination() {
+        Cart cart = new Cart(Arrays.asList(new ProductItem(new Product("A", 50, 0), 3),
+                new ProductItem(new Product("B", 30, 0), 5),
+                new ProductItem(new Product("C", 20, 0), 3),
+                new ProductItem(new Product("D", 15, 0), 2)
+        ));
+
+        double expectedValue = 330;
+        double actualValue = this.priceService.calculatePrice(cart);
+        assertEquals(expectedValue, actualValue);
+    }
 }
