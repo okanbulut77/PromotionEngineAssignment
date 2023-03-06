@@ -16,7 +16,7 @@ public class PriceCalculationService implements IPriceCalculationService {
 
     public double calculatePrice(Cart cart){
         // Calculate promoted price.
-        double promotedPrice = 0; //TODO implement applyPromo(cart);
+        double promotedPrice = applyPromo(cart);
         double remainingProductsPrice = 0;
 
         // Calculate remaining unpromoted products price and assign to remainingProductPrice
@@ -27,11 +27,20 @@ public class PriceCalculationService implements IPriceCalculationService {
         return promotedPrice + remainingProductsPrice;
     }
 
-    private double applyPromo(){
+    private double applyPromo(Cart cart){
         double totalPromotedPrice = 0;
         //Get promo list
         List<Promo> promoList = this.promoRepository.getPromoList();
-        //TODO Get each promo and apply to the cart
+        //Get each promo and apply to the cart
+        for(Promo promo : promoList) {
+            IPromoService promotionService;
+            if(promo.isBundledPromo()){
+                promotionService = new BundledPromoService();
+            }else{
+                promotionService = new SingleProductPromoService();
+            }
+            totalPromotedPrice += promotionService.calculatePromotedPrice(cart, promo);
+        }
 
         return totalPromotedPrice;
     }
