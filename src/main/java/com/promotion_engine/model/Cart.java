@@ -20,7 +20,7 @@ public class Cart {
     //Find matching product items
     public ProductItem findProductItem(ProductItem productItem) {
         for(ProductItem cartProductItem : this.productItems) {
-            if(productItem.getProduct().equals(cartProductItem.getProduct())) {
+            if(productItem.getProduct().getSku().equals(cartProductItem.getProduct().getSku())) {
                 return cartProductItem;
             }
         }
