@@ -34,4 +34,8 @@ public class Product {
     public void setDiscount(double discount) {
         this.discount = discount;
     }
+    public double getDiscountedPrice() {
+        return unitPrice * (1 - discount/100);
+    }
+
 }
